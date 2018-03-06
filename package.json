@@ -1,0 +1,20 @@
+{
+  "name": "USSD_Service",
+  "version": "1.0.0",
+  "description": "USSD App with information about Computer Society of Kimathi\r The app is built with Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianokinyi/USSD_Service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianokinyi/USSD_Service/issues"
+  },
+  "homepage": "https://github.com/brianokinyi/USSD_Service#readme"
+}
