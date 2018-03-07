@@ -15,7 +15,7 @@ app.get('*', (req, res) => {
 app.post('*', (req, res) => {
   let {sessionId, serviceCode, phoneNumber, text} = req.body
   if (text == '') {
-    // This is the first request
+    // Return main menu on first request
     let response = `CON Welcome to CSOK
     1. Who We Are
     2. Why Join Us
@@ -23,14 +23,20 @@ app.post('*', (req, res) => {
     4. Our History`
     res.send(response)
   } else if (text == '1') {
-    // Business logic for first level response
-    let response = `CON Choose account information you want to view
-    1. Account number
-    2. Account balance`
+    // Who We Are
+    let response = `CON 
+    We are a student club that aims to empower students by bringing cutting-edge technology, new ideas, and top tech-innovators to campus.`
     res.send(response)
   } else if (text == '2') {
-    // Business logic for first level response
-    let response = `END Your phone number is ${phoneNumber}`
+    // Why join us
+    let response = `END 
+    By joining us, you will:
+    1. Gain software development skills
+    2. Meet like minded people and make friends
+    3. Invited to Hackathons and tech events
+    4. See new places and and do new things
+    5. It's fun
+    `
     res.send(response)
   } else if (text == '1*1') {
     // Business logic for first level response
