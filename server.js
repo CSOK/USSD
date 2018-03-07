@@ -47,10 +47,12 @@ app.post('*', (req, res) => {
     `
     res.send(response)
   } else if (text == '4') {
-    // This is a second level response where the user selected 1 in the first instance
-    let balance = 'NGN 10,000'
-    // This is a terminal request. Note how we start the response with END
-    let response = `END Your balance is ${balance}`
+    // History 
+    let response = `END 
+    The club was founded in July 2012 by Antony Oroko as Chairman, Oscar Oluoch as Vice and Nelson as Secretary. Their objective was to bring the DeKUT fraternity in learning together. The club organised meetups involving students in peer to peer learning.From then, the club has organised Tech Events, Meetups, Social Activies and has many Awards.
+    
+    View the whole history at https://csokimathi.club
+    `
     res.send(response)
   } else {
     res.status(400).send('Bad request!')
