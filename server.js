@@ -35,16 +35,18 @@ app.post('*', (req, res) => {
     2. Meet like minded people and make friends
     3. Invited to Hackathons and tech events
     4. See new places and and do new things
-    5. It's fun
+    5. It's fun!
     `
     res.send(response)
-  } else if (text == '1*1') {
-    // Business logic for first level response
-    let accountNumber = 'ACC1001'
-    // This is a terminal request. Note how we start the response with END
-    let response = `END Your account number is ${accountNumber}`
+  } else if (text == '3') {
+    // Why join us
+    let response = `END 
+    Visit https://csokimathi.club 
+    or
+    Call/Text/Whatsapp Grace at 0798 634 840
+    `
     res.send(response)
-  } else if (text == '1*2') {
+  } else if (text == '4') {
     // This is a second level response where the user selected 1 in the first instance
     let balance = 'NGN 10,000'
     // This is a terminal request. Note how we start the response with END
