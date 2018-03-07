@@ -15,10 +15,12 @@ app.get('*', (req, res) => {
 app.post('*', (req, res) => {
   let {sessionId, serviceCode, phoneNumber, text} = req.body
   if (text == '') {
-    // This is the first request. Note how we start the response with CON
-    let response = `CON Whatsapp bro
-    1. My Account
-    2. My phone number`
+    // This is the first request
+    let response = `CON Welcome to CSOK
+    1. Who We Are
+    2. Why Join Us
+    3. How To Join 
+    4. Our History`
     res.send(response)
   } else if (text == '1') {
     // Business logic for first level response
