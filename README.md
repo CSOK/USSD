@@ -1,11 +1,9 @@
-cle# USSD_Service
+# USSD_Service
 USSD App with information about Computer Society of Kimathi
 The app is built with Nodejs
 
 ## Demo
-![Main Menu](./assets/img/1.png "Main Menu")
-
-![Who We Are](./assets/demo/img/2.png "Who We Are")
+![Preview Image](./assets/img/preview.png "Main Menu")
 
 ## Contributing
 Please read [Contributing.md](CONTRIBUTING.md) for  details on our code of conduct, and the process for submitting pull requests to us.
