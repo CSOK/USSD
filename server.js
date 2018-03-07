@@ -24,14 +24,12 @@ app.post('*', (req, res) => {
     res.send(response)
   } else if (text == '1') {
     // Who We Are
-    let response = `CON Who We Are
-    
+    let response = `END --Who We Are--   
     We are a student club that aims to empower students by bringing cutting-edge technology, new ideas, and top tech-innovators to campus.`
     res.send(response)
   } else if (text == '2') {
     // Why join us
-    let response = `END Why Join
-
+    let response = `END --Why Join--
     By joining us, you will:
     1. Gain software development skills
     2. Meet like minded people and make friends
@@ -42,7 +40,7 @@ app.post('*', (req, res) => {
     res.send(response)
   } else if (text == '3') {
     // Why join us
-    let response = `END Join Us
+    let response = `END --Join Us--
     Visit https://csokimathi.club 
     or
     Call/Text/Whatsapp Grace at 0798 634 840
@@ -50,7 +48,7 @@ app.post('*', (req, res) => {
     res.send(response)
   } else if (text == '4') {
     // History 
-    let response = `END History
+    let response = `END --History--
 
     The club was founded in July 2012 by Antony Oroko as Chairman, Oscar Oluoch as Vice and Nelson as Secretary. Their objective was to bring the DeKUT fraternity in learning together. The club organised meetups involving students in peer to peer learning.From then, the club has organised Tech Events, Meetups, Social Activies and has many Awards.
     
